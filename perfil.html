@@ -1,73 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
 
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
+    <link rel="icon" href="./imagens/favicon-16x16.png" type="image/x-icon">
+    <meta name="description" content="Portfólio do Professor Walker André Schwartz — Programação, Tecnologia e Suporte Técnico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            width: 1500px;
-            height: 700px;
-        }
-
-        header {
-            background: #22C1C3;
-            background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
-            width: 100%;
-            height: 10%;
-        }
-
-        h1 {
-            color: rgb(121, 5, 236);
-            font-family: arial;
-            font-size: 100%;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        h5 {
-            color: rgb(0, 0, 0);
-            font-family: arial;
-            font-size: 60%;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        main {
-            background-color: rgb(126, 193, 255);
-            width: 100%;
-            height: 80%;
-        }
-
-        footer {
-            background-color: rgb(90, 90, 82);
-            width: 100%;
-            height: 10%;
-        }
-        
-        .menu{
-            display:none;
-            position:absolute;
-            background-color: rgb(0, 0, 0);
-            list-style: none;
-            padding: 0;
-        }
-        .dropdown:hover.menu{
-            display:block;
-            position: relative;
-        }
-        .menu_principal
-    </style>
+    <title>Professor Walker André Schwartz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
 </head>
-
 <body>
+
     <header>
-        
+        <div class="header-content">
+            <div class="logo">
+                <div class="divlog">
+                    <span class="logo-icon"> <img class="logoimg" src="./imagens/logo.png"></span>
+                </div>
+                <div>
+                    <h1>Professor Walker André Schwartz</h1>
+                    <p class="subtitle">Programação, Tecnologia e Suporte Técnico</p>
+                </div>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+        </div>
+        <nav id="navMenu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="colegios.html">Colégios</a></li>
+                <li><a href="#">FACSUL</a></li>
+                <li><a href="#">Impressão 3D</a></li>
+                <li><a href="#">Infocamps</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-photo">
+                    <div class="photo-frame">
+                        <img id="perfil" src="./imagens/perfil.png" alt="Perfil Walker">
+                    </div>
+                    <div class="badges">
+                        <p style="text-align: center; padding: 0px 0px 20px;">
+                            <strong>
+                                "Que possamos explorar, experimentar e construir juntos novos caminhos para a educação."
+                            </strong>    
+                        </p>
+                        <span class="badge">Programação</span>
+                        <span class="badge">Tecnologia</span>
+                        <span class="badge">Suporte Técnico</span>
+                    </div>
+                </div>
+
+                <div class="hero-text">
+                    <span class="tag">Bem-vindo(a), um pouco sobre mim.</span>
+                    <h2>Olá, sou o <span class="highlight">Walker André Schwartz</span></h2>
+                    <p style="text-align: justify;">
+                        apaixonado por <strong>tecnologia</strong> e por <strong>educação</strong>, duas áreas que para mim caminham lado a lado.
+                        Com experiência em diferentes níveis de ensino, atuo como professor na rede estadual e particular,
+                        lecionando para turmas dos anos finais do Ensino Fundamental, do Ensino  <strong>Médio</strong>, 
+                        do Ensino <strong>Profissional</strong>
+                        e, mais recentemente, também do Ensino <strong>Superior</strong>.
+                        <br>
+                        Minha atuação vai além do ensino técnico: acredito em uma educação transformadora, que une 
+                        o domínio das ferramentas digitais ao desenvolvimento do pensamento crítico, da criatividade
+                        e da autonomia dos estudantes.
+                        <br>
+                        Sou Tecnólogo em Desenvolvimento de Sistemas e exerço o magistério há aproximadamente
+                        <strong>20 anos</strong>. Leciono atualmente nos
+                        Colégios <strong>Campos Sales</strong> e <strong>Elias Abrahão</strong> em <strong>Campina Grande
+                        do Sul</strong> e <strong>Quatro Barras</strong>.
+                        <br>
+                        Para além da sala de aula, sou microempresário e mantenho uma empresa de consultoria e suporte 
+                        técnico em TI, com atuação também em impressão 3D. Essa vivência empresarial enriquece minhas aulas,
+                         aproximando a teoria da prática real do mercado e trazendo exemplos concretos do mundo da tecnologia.
+                    </p>
+                </div>
+            </div>    
+        </section>
+       <section class="areas container">
+            <h3 class="section-title">Áreas de Atuação</h3>
+             <div class="areasatua">
+                <div class="quadrado">
+                   <h4 style="text-align: center;">Desenvolvimento de Sistemas</h4>
+                   <p style="text-align: center;"><br>Estimulando o protagonismo, a autonomia e o pensamento crítico, e tornando o aprendizado mais significativo, engajador e alinhado às demandas do mundo contemporâneo.</p>
+                </div>  
+                <div class="quadrado">
+                    <h4 style="text-align: center;">Suporte Técnico</h4>
+                    <p style="text-align: center;"><br>Voltado ao ensino, trago ampla vivência em boas práticas de manutenção, configuração e resolução de problemas de hardware e software, transformando esse conhecimento técnico em metodologias práticas e acessíveis para formar novos profissionais.</p>
+                </div>
+                <div class="quadrado">
+                    <h4 style="text-align: center;">Atualização Constante</h4>
+                    <p style="text-align: center;"><br>Formação continuada aplicada em turmas de ensino médio e superior, sempre em busca de novas ferramentas e metodologias para levar o que há de mais atual para os alunos.</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-
+    <br>
+    <footer class="footer">
+        <p>© 2026 Walker André Schwartz — Todos os direitos reservados.</p>
+         <p>WhatsApp : (41) 98429-3925</p>
     </footer>
-</body>
 
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', () => {
+            document.getElementById('navMenu').classList.toggle('open');
+        });
+    </script>
+
+</body>
 </html>
