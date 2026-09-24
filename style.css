@@ -11,3 +11,9 @@ ul{
 a{
     color: black;
 }
+img{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: 5px solid blueviolet;
+}
