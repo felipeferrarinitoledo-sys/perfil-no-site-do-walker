@@ -1,7 +1,6 @@
 body{
     background: #0f66d1;
     background: linear-gradient(0deg, rgba(15, 102, 209, 1) 0%, rgba(79, 224, 117, 1) 50%, rgba(255, 239, 92, 1) 100%);
-    min-height: 100vh;
 }
 ul{
     display: flex;
@@ -31,4 +30,5 @@ img{
 section h2,
 section p{
     grid-column: 2;
+    font-size: 40px;
 }
