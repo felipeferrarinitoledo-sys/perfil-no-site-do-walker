@@ -1,8 +1,6 @@
 body{
     background: #22C1C3;
     background: linear-gradient(0deg,rgba(34, 193, 195, 1) 0%, rgba(138, 173, 170, 1) 34%, rgba(155, 153, 148, 1) 61%, rgba(235, 63, 47, 1) 100%);
-    width: "100px";
-    heigth: "100px"
 }
 ul{
     display: flex;
@@ -14,9 +12,22 @@ ul{
 a{
     color: black;
 }
+section{
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    column-gap: 20px;
+    align-items: start;
+}
 img{
     width: 230px;
     height: 230px;
     border-radius: 50%;
     border: 5px solid blueviolet;
+    
+    grid-column: 1;
+    grid-row: 1 / span 3;
+}
+section h2,
+section p{
+    grid-column: 2;
 }
