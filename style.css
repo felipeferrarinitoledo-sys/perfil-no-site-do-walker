@@ -12,6 +12,9 @@ ul{
 a{
     color: black;
 }
+p{
+    font-size: 22px;
+}
 section{
     display: grid;
     grid-template-columns: 230px 1fr;
